@@ -288,26 +288,26 @@ export interface PolicyStatementAttributes {
    *
    * @default - no actions
    */
-  actions?: string[];
+  readonly actions?: string[];
 
   /**
    * List of principals to add to the statement
    *
    * @default - no principals
    */
-  principals?: IPrincipal[];
+  readonly principals?: IPrincipal[];
 
   /**
    * Resource ARNs to add to the statement
    *
    * @default - no principals
    */
-  resourceArns?: string[];
+  readonly resourceArns?: string[];
 
   /**
    * Conditions to add to the statement
    *
    * @default - no condition
    */
-  conditions?: {[key: string]: any};
+  readonly conditions?: {[key: string]: any};
 }

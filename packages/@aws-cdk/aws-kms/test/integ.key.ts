@@ -11,7 +11,7 @@ const key = new Key(stack, 'MyKey', { retain: false });
 key.addToResourcePolicy(new PolicyStatement()
   .addAllResources()
   .addAction('kms:encrypt')
-  .addArnPrincipal(stack.accountId));
+  .addArnPrincipal(stack.account));
 
 key.addAlias('alias/bar');
 
